@@ -1,0 +1,61 @@
+<html>
+    <body>
+         <h1 class="topic">EXAMPLE OF GRID AND FLEX BOX</h1>
+        <div class="container">
+         
+            <div class="divinformation">
+                <h1>section</h1>
+                <div class="inside1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repudiandae temporibus quos atque tempore voluptates ipsum, laborum facilis qui asperiores aliquam dolores quas provident, et, vero vel a esse. Illum.</p>
+                     <a href="https://www.google.com">google</a>
+                </div>
+            </div>
+            <div class="divinformation"><h1>section2</h1>section2
+                <div class="inside1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repudiandae temporibus quos atque tempore voluptates ipsum, laborum facilis qui asperiores aliquam dolores quas provident, et, vero vel a esse. Illum.</p>
+                     <a href="https://www.google.com">google</a>
+                </div>
+            </div>
+            <div class="divinformation">
+                <h1>section3</h1>
+                 <div class="inside1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repudiandae temporibus quos atque tempore voluptates ipsum, laborum facilis qui asperiores aliquam dolores quas provident, et, vero vel a esse. Illum.</p>
+                     <a href="https://www.google.com">google</a>
+                </div>
+            </div>
+            <div class="divinformation"><h1>section4</h1>
+             <div class="inside1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repudiandae temporibus quos atque tempore voluptates ipsum, laborum facilis qui asperiores aliquam dolores quas provident, et, vero vel a esse. Illum.</p>
+                     <a href="https://www.google.com">google</a>
+                </div></div>
+            
+        </div>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 400px 400px;
+                gap:20px;
+                padding:10px;
+                border:2px solid blanchedalmond;
+                background-color: antiquewhite;
+            }
+            .divinformation{
+                display: flex;
+                border: 2px solid red;
+                flex-direction: column;
+                align-items: center;
+            }
+            .divinformation h1,.inside1{
+                font-size: medium;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+
+            }
+               
+            
+         .topic{
+            text-align: center;
+             }
+        </style>
+    </body>
+</html>
