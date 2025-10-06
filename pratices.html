@@ -45,3 +45,140 @@
       </footer>
     </body>
 </html>
+
+
+
+
+
+<html>
+    <head>
+        <title>portfolio</title>
+        <style>
+            html,body{
+                background-color: rgb(13, 12, 11);
+                color: aliceblue;
+            }
+            #mainheader{
+                display: flex;
+            }
+            .name{
+                margin-left:50px
+            }
+            .navigation-bar{
+                display:flex;
+                align-items: center;  
+                justify-content: space-between;
+                gap:30px;
+                margin-left: 60%;
+            }
+            #mainbody{
+                display: flex;
+                
+            }
+            .information{
+                display: flex;
+                flex-direction: column;
+               line-height:35px;
+               margin-left: 100px;
+               
+            }
+            .information div:first-child{
+
+                color: aliceblue;
+               padding:5px;
+               margin-top: 100px;
+               
+            }
+               .information div:nth-child(2){
+                color: aliceblue;
+                margin-top: 10px;
+               }
+
+                .information div:last-child{
+                color: aliceblue;
+                margin-top: 10px;
+                margin-left: 40px ;
+               }
+            .photo{
+              display: flex;
+                margin-left: 30%;
+            }
+           .forword{
+              position: relative; /* container for layering */
+              width: 70%;       /* adjust as needed */
+              height:70%;      /* adjust as needed */
+                 }
+
+         .backgroundimage {
+          position: absolute;
+           top: 0;
+           left: 0;
+           width: 30%;
+           height: 30%;
+           object-fit: cover;  /* makes sure background fills the div */
+           z-index: 1;         /* lower layer */
+     }
+
+          
+        </style>
+    </head>
+    <body>
+        <header id="mainheader">
+            <div class="name">
+                <h3>Nagendra</h3>
+            </div>
+            <div class="navigation-bar">
+            <div class="home">HOME</div>
+            <div class="div1">ABOUTME</div>
+            <div class="div2">PROJECTS</div>
+            <div class="div3">Contacts</div>
+            </div>
+        </header>
+        <main id="mainbody">
+            <div class="information">
+                <div>HELLO.</div>
+                <div>_________NAGENDRA M</div>
+                <div>SOFTWAREDEVELOPER</div>
+            </div>
+            <div class="photo">
+                <img  class="forword"src="Pictures/smirithi-removebg-preview.png">
+                <img  class="backgroundimage" src="Pictures/backgroundimageforprotfolio.jpg">
+            </div>
+        </main>
+    </body>
+</html>
+
+
+
+
+  .photo {
+            position: relative; /* container for layering */
+            width: 400px;       /* adjust container size */
+            height: 400px;
+            margin-left:40%;
+            border: 1px solid red;
+        }
+
+        .backgroundimage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .forword {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* preserve aspect ratio */
+            z-index: 2;          /* on top of background */
+        }
+
+
+<img class="backgroundimage" src="Pictures/backgroundimageforprotfolio.jpg">
+            <img class="forword" src="Pictures/smirithi-removebg-preview.png">

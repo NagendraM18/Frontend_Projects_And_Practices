@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        html, body {
+            background-color: rgb(13, 12, 11);
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        #mainheader {
+            display: flex;
+            align-items: center;
+            padding: 10px 50px;
+        }
+
+        .name h3 {
+            margin: 0;
+            padding:20px
+        }
+
+        .navigation-bar {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: auto; /* push nav to right */
+        }
+
+        /* Main Section */
+        #mainbody {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .information {
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            line-height: 70px;
+           
+            
+        }
+
+        .information div:first-child {
+            font-size: 32px;
+            margin-bottom: 10px;
+            
+        }
+
+        .information div:nth-child(2) {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+             margin-left: 50px;
+             
+        }
+
+        .information div:last-child {
+            
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            
+        }
+
+        /* Photo Section */
+        .photo {
+            position: relative; /* container for layering */
+            width: 400px;       /* adjust container size */
+            height: 400px;
+            margin-left:30%;
+           
+        }
+
+        .backgroundimage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .forword {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* preserve aspect ratio */
+            z-index: 2;          /* on top of background */
+        }
+
+        .button{
+            height: 40px;
+           font-size: 30px;
+            font-weight: bold;
+            margin-left: 30px; 
+            color: white;
+            background-color: coral;
+            border: 2px  solid coral ;
+        }
+        .button1{
+            height: 40px;
+           font-size: 30px;
+            font-weight: bold;
+            margin-left: 30px; 
+            color: white;
+            background-color:  rgb(13, 12, 11);
+            border: 2px  solid coral ;
+        }
+    </style>
+</head>
+<body>
+    <header id="mainheader">
+        <div class="name">
+            <h3>Nagendra</h3>
+        </div>
+        <div class="navigation-bar">
+            <div class="home">HOME</div>
+            <div class="div1">ABOUTME</div>
+            <div class="div2">PROJECTS</div>
+            <div class="div3">CONTACTS</div>
+        </div>
+    </header>
+
+    <main id="mainbody">
+        <div class="information">
+            <div>HELLO.</div>
+            <div>NAGENDRA M</div>
+            <div>SOFTWARE DEVELOPER</div>
+         <div class="buttons">
+            <input class="button" type="button" value="projects">
+            <input class="button1" type="button" value="projects">
+         </div>
+        </div>
+
+        <div class="photo">
+            <img class="backgroundimage" src="Pictures/backgroundimageforprotfolio.jpg">
+            <img class="forword" src="Pictures/smirithi-removebg-preview.png">
+        </div>
+
+    </main>
+</body>
+</html>

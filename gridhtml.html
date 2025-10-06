@@ -1,29 +1,27 @@
 <html>
     <body>
         <div class="container">
-    <div class="images"><img src="Pictures/peace.jpg"></div>
-    <div class="images"><img src="Pictures/{D8AC89C0-6C59-49C0-A890-9448E296EF26}.png"></div>
-    <div class="images"><img src="Pictures/wallpaper.jpg"></div>
-    <div class="images"><img src="Pictures/PosterImage.jpg"></div>
+  <div class="item a">A</div>
+  <div class="item b">B</div>
+  <div class="item c">C</div>
+  <div class="item d">D</div>
+  <div class="item E">E</div>
 </div>
 
 <style>
 .container {
-    column-count:6;     
-    column-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  gap: 10px;
+  border: 2px solid black;
 }
 
-.images {
-
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.images img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-        </style>
+/* One item is tall */
+.item.a { background: lightcoral; grid-row: span 2; }
+.item.b { background: lightblue; }
+.item.c { background: lightgreen; }
+.item.d { background: gold; }
+</style>
     </body>
 </html>
