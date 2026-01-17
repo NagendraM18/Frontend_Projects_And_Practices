@@ -1,3 +1,4 @@
+
 // Professional Cursor System
         const cursorDot = document.querySelector('.cursor-dot');
         const cursorOutline = document.querySelector('.cursor-outline');
@@ -529,4 +530,3 @@ Regards,
                 }
             }
         `;
-        document.head.appendChild(style);
