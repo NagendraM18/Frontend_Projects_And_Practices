@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(13,12,11);
+                color: white;
+            }
+            button{
+
+                margin: 10px;
+                border-radius: 40px;
+                background-color: rgb(13,12,11);
+                border:solid  white 2px;
+                padding: 20px;
+                cursor: pointer;
+                margin-top:20px;
+                color:white;
+                
+            }
+            h1{
+                margin-left:100px
+            }
+            p{
+                margin-left: 30px;
+            }
+            .rock_image{
+                height:50px;
+            }
+        
+        </style>
+    </head>
     <body>
-        <button  value="rock">Rock</button>
-        <button  value="paper">Paper</button>
-        <button  value="scissor">Scissor</button>
+        <h1>Rock Paper Scissors</h1>
+        <button value="rock"><img  class=rock_image src="../RockPaperScissor/rock-emoji.png "></button>
+        <button  value="paper"><img  class=rock_image src="../RockPaperScissor/paper-emoji.png "></button>
+        <button  value="scissors"><img  class=rock_image src="../RockPaperScissor/scissors-emoji.png "></button>
 
         <p class="Js_winning">RESULT: </p>
         <p class="Js_score">SCORE: </p>
-        <button value="reset">Reset</button>
+        <button value="reset" class="reset_button">Reset</button>
         <script rel="javascript" src="scripting.js"> 
         </script>
     </body>

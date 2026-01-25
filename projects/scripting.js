@@ -17,25 +17,25 @@ let score=JSON.parse(localStorage.getItem("score")) || {win:0,lose:0,draw:0};
                         }
 
                     const valueChooseByUser=this.value;
-                    const computerValue=["rock","paper","scissor"];
+                    const computerValue=["rock","paper","scissors"];
                     const arrayvalue=Math.floor(Math.random()*computerValue.length);
                     const ComputerChoose=computerValue[arrayvalue];
 
 
                     if(valueChooseByUser === ComputerChoose){
                          score.draw++;
-                         result.innerText=`DRAW - you both choose ${valueChooseByUser}`;
+                         result.innerHTML=`DRAW - you both choose <img  class=rock_image src="../RockPaperScissor/${valueChooseByUser}-emoji.png ">`;
                     }
-                         
-                    else if((valueChooseByUser==="rock" && ComputerChoose==="scissor") ||
-                      (valueChooseByUser === "scissor" && ComputerChoose==="paper")||
+
+                    else if((valueChooseByUser==="rock" && ComputerChoose==="scissors") ||
+                      (valueChooseByUser === "scissors" && ComputerChoose==="paper")||
                       (valueChooseByUser==="paper" && ComputerChoose==="rock") ){
                         score.win++;
-                        result.innerText=`YOU WIN - computer choose ${ComputerChoose} and you choose ${valueChooseByUser}`;
+                        result.innerHTML=`YOU WIN - computer choose <img  class=rock_image src="../RockPaperScissor/${ComputerChoose}-emoji.png "> and you choose <img  class=rock_image src="../RockPaperScissor/${valueChooseByUser}-emoji.png ">`;
                     }
                      else{
                         score.lose++;
-                        result.innerText=`YOU LOSE -computer choose ${ComputerChoose} and you choose ${valueChooseByUser}`;
+                        result.innerHTML=`YOU LOSE -computer choose <img  class=rock_image src="../RockPaperScissor/${ComputerChoose}-emoji.png "> and you choose <img  class=rock_image src="../RockPaperScissor/${valueChooseByUser}-emoji.png ">`;
                      }
                      
                      scoredisplay.innerText=`score is win ${score.win} lose ${score.lose}  draw${score.draw}`;
@@ -44,5 +44,5 @@ let score=JSON.parse(localStorage.getItem("score")) || {win:0,lose:0,draw:0};
                 )
             })
 
-            //computer choose ${ComputerChoose} and it is a
+        
   
