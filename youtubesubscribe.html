@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .js_button{
+            background-color: black;
+            color:white;
+            font-weight:bold;
+            padding:10px;
+            border-radius: 30px;
+            border: solid ;
+            cursor: pointer;
+         }
+         .subscribed{
+            background-color: rgb(240, 240, 240);
+            color: black;
+            border:solid rgb(240,240,240);
+         }
+    </style>
+</head>
+<body>
+
+    <p>Subscrib to my Channel</p>
+    <button class="js_button" onclick="ChangeValue()">Subscribe</button>
+    <script>
+        function ChangeValue()
+        {
+            const button=document.querySelector(".js_button");
+            if(button.innerText==="Subscribe")
+             {
+                 button.innerText="Subscribed";
+                 button.classList.add("subscribed");
+             }
+             else
+             {
+                button.innerText="Subscribe";
+                button.classList.remove("subscribed");
+             }
+    
+        
+        }
+    </script>
+</body>
+</html>
